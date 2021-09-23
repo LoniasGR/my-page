@@ -1,0 +1,9 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#img_profile {
+    max-width: 15em;
+    height:auto;
+    border-radius: 50%;
+}

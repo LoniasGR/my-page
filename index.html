@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="The personal website of Leonidas Avdelas.">
-    <meta name="keywords" content="profile, personal">
-    <meta name="author" content="Leonidas Avdelas">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The personal website of Leonidas Avdelas."
+    />
+    <meta name="keywords" content="personal, page" />
+    <meta name="author" content="Leonidas Avdelas" />
+    <meta name="viewport" content="width=device-width" />
 
     <title>Leonidas - Home</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-</head>
-
-<body>
-    <nav class="topnav">
-        <ul class="navlist">
-            <li><a class="active navitem" href="#home">Home</a></li>
-            <li><a class="navitem" href="#projects">Projects</a></li>
-            <li><a class="navitem" href="#contact">Contact</a></li>
-            <li><a class="navitem" href="#about">About</a></li>
-        </ul>
+  <body>
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="active" href="#home">Home</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+      </ul>
     </nav>
-    <h1 id="home">Leonidas Avdelas</h1>
-    <img id="img_profile" src="./img/leonidas.jpg" alt="Profile picture " />
-    <p>
-        Welcome! I'm Leonidas. I'm currently pursuing a diploma in <a href="https://www.ece.ntua.gr">Electrical and
-            Computer Engineering</a> in <a href="https://www.ntua.gr">NTUA</a>.
-    </p>
-    <p>
-        My main interests lie in Machine Learning and currently Reinforcement Learning, which is also the topic of my
-        thesis. I still have not found my one true calling, so I am studying different topics, ranging from managing
-        teams to abstract algebra until I do.
-        I love traveling, learning about how things work and teaching.
-    </p>
-    <p>
-        If you want to reach out to me, feel free to do so on <a href="mailto:avdelasleonidas@gmail.com">my email</a>.
-    </p>
+    <div class="content">
+      <h1 id="home">Leonidas Avdelas</h1>
+      <img id="img-profile" src="./img/leonidas.jpg" alt="Profile picture " />
+      <p>
+        Welcome! I'm Leonidas. I'm currently pursuing a diploma in
+        <a href="https://www.ece.ntua.gr"
+          >Electrical and Computer Engineering</a
+        >
+        in <a href="https://www.ntua.gr">NTUA</a>.
+      </p>
+      <p>
+        My main interests lie in Machine Learning and Software Engineering. I am
+        specifically interested in Reinforcement Learning, which is also the
+        topic of my Master's thesis. I am currently also working as a blockchain
+        engineer.
+      </p>
+      <p>
+        If you want to reach out to me, feel free to do so on
+        <a href="mailto:avdelasleonidas@gmail.com">my email</a>.
+      </p>
 
-    <h2 id="projects">Projects</h2>
+      <h2 id="projects">Projects</h2>
 
-    <p>
-        A sample of my projects can be found on <a href="https://github.com/LoniasGR">my Github profile</a>. Below are
-        some of my favourites:
-    </p>
-    <table>
+      <p>
+        A sample of my projects can be found on
+        <a href="https://github.com/LoniasGR">my Github profile</a>. Below are
+        some of my favorites:
+      </p>
+      <table>
         <tr>
-            <th>Project</th>
-            <th>Description</th>
+          <th>Project</th>
+          <th>Description</th>
         </tr>
         <tr>
-            <td>Pacman Clone</td>
-            <td>
-                <p>
-                    A pacman clone written in Java. There are some bugs, but works pretty well. A neat feature is that
-                    you can add your own levels. Sounds not included.
-                </p>
-            </td>
+          <td>EESTEC.net</td>
+          <td>
+            <p>
+              The public website of the Youth NGO EESTEC, as well as its
+              intranet. I was one of the main contributors for both the frontend
+              (React) and backend (Laravel). I also took care a lot of the
+              Operations and infrastructure code, as well as creating the CI/CD
+              pipelines.
+            </p>
+          </td>
         </tr>
         <tr>
-            <td>Q&A Website</td>
-            <td>A Q&A page written in node.js and React. The backend works in a microservices fashion, where when a
-                service needs data, it sends an HTTP request, while when it sends data to the others, it goes through a
-                redis Stream to ensure that the message is not lost.
-            </td>
+          <td>Pacman Clone</td>
+          <td>
+            <p>
+              A pacman clone written in Java. There are some bugs, but works
+              pretty well. A neat feature is that you can add your own levels.
+              Sounds not included.
+            </p>
+          </td>
         </tr>
-    </table>
-
-</body>
-
+        <tr>
+          <td>Q&A Website</td>
+          <td>
+            A Q&A page written in node.js and React. The backend works in a
+            microservices fashion, where when a service needs data, it sends an
+            HTTP request, while when it sends data to the others, it goes
+            through a redis Stream to ensure that the message is not lost.
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
